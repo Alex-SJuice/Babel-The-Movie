@@ -1,4 +1,4 @@
-//gcc main.c -o main.exe -IC:\raylib\w64devkit\include -LC:\raylib\w64devkit\lib -lraylib -lopengl32 -lgdi32 -lwinmm
+//gcc main.c -o ./target/main.exe -IC:\raylib\w64devkit\include -LC:\raylib\w64devkit\lib -lraylib -lopengl32 -lgdi32 -lwinmm
 #include "raylib.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,9 +33,10 @@ int main(int argc, char *argv[]) {
     	BeginDrawing();
     	for(int x = 0; x < screenWidth; x++) {
             for(int y = 0; y < screenHeight; y++) {
-                DrawPixel(x, y, ColorFromHSV( (float)lehmer64()*5.421010862427522e-20f  * 360, 
-                                            (float)lehmer64()*5.421010862427522e-20f , 
-                                            (float)lehmer64()*5.421010862427522e-20f ));
+                DrawPixel(x, y, ColorFromHSV(   (float)lehmer64()*5.421010862427522e-20f  * 360, 
+                                                (float)lehmer64()*5.421010862427522e-20f , 
+                                                1.0//(float)lehmer64()*5.421010862427522e-20f 
+                    ));
             }
         }
  		
