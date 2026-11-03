@@ -14,18 +14,25 @@ uint64_t lehmer64() {
 
 
 int main(int argc, char *argv[]) {
-	if (argc <= 3) {
-		printf("NOT ENOUGH ARGUMENTS (width height framerate)");
-		return 1;
-	}
+    int parameters[3];
 
-	const int screenWidth = atoi(argv[1]);
-    const int screenHeight = atoi(argv[2]);
+	if (argc <= 3) {
+        parameters[0] = 100;
+        parameters[1] = 100;
+        parameters[2] = 60;
+	} else {
+        for (i = 0; i < 3; i++) {
+            parameters[i] = atoi(argv[i + 1]);
+        }
+    }
+
+	const int screenWidth = parameters[0];
+    const int screenHeight = parameters[1];
 
     g_lehmer64_state = (__uint128_t)time(NULL);
 
     InitWindow(screenWidth, screenHeight, "Babel: The Movie");
-    SetTargetFPS(atoi(argv[3]));
+    SetTargetFPS(parameters[2]);
     
     while (!WindowShouldClose()) {
     	printf("%d\n", GetFPS());

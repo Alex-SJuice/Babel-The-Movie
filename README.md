@@ -31,6 +31,7 @@ Speaking of features,
 1. download the latest version [here](https://github.com/Alex-SJuice/Babel-The-Movie/releases/tag/Prototype)
 2. run the executable with 3 parameters: width of the screen, height of the screen, target framerate ex. main.exe 100 100 60
 3. ***MAKE SURE TO RUN IT FROM A TERMINAL!!!*** You can't run it with parameters if you just double click it!
+	(This issue has been fixed, but I shipped already, so the fixed version will be released in the future)
 4. the "movie" should begin playing! tell me if you see anything cool...
 
 ## Inspiration
