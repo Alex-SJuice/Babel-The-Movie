@@ -4,7 +4,19 @@ With enough time, this program will show you *every piece* of video that has eve
 
 <img src="assets\Screenshot 2026-08-18.png" />
 
+So it was originally supposed to be run in a terminal because it needed parameters to function correctly, but now it just launches with default parameters when double-clicked instead of exiting
+\*note to self: put the how to use section at the top next time
+
 AI was not used in the making of this project.
+
+## How to use
+
+1. download the latest version [here](https://github.com/Alex-SJuice/Babel-The-Movie/releases/tag/v0.0.2)
+2. run the executable with 3 parameters: width of the screen, height of the screen, target framerate ex. main.exe 100 100 60
+	If you want to use custom parameters, you need to run the program in a terminal!
+3. the "movie" should begin playing! tell me if you see anything cool...
+
+
 ## Confession
 
 Ok so, stardance is coming to an end. I've already commited myself to Terra (a new YSWS, go check it out!).
@@ -25,14 +37,6 @@ Speaking of features,
  	- different distributions
  - recording
  - biasing 
-
-## How to use
-
-1. download the latest version [here](https://github.com/Alex-SJuice/Babel-The-Movie/releases/tag/Prototype)
-2. run the executable with 3 parameters: width of the screen, height of the screen, target framerate ex. main.exe 100 100 60
-3. ***MAKE SURE TO RUN IT FROM A TERMINAL!!!*** You can't run it with parameters if you just double click it!
-	(This issue has been fixed, but I shipped already, so the fixed version will be released in the future)
-4. the "movie" should begin playing! tell me if you see anything cool...
 
 ## Inspiration
 

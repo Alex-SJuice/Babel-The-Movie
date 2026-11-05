@@ -17,11 +17,11 @@ int main(int argc, char *argv[]) {
     int parameters[3];
 
 	if (argc <= 3) {
-        parameters[0] = 100;
-        parameters[1] = 100;
+        parameters[0] = 500;
+        parameters[1] = 500;
         parameters[2] = 60;
 	} else {
-        for (i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             parameters[i] = atoi(argv[i + 1]);
         }
     }
